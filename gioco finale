@@ -12,7 +12,10 @@ BLUE = (0, 0, 255)
 YELLOW = (255, 255, 0)
 RED = (255, 0, 0)
 GREEN = (0, 255, 0)
- 
+
+font = pygame.font.SysFont(None, 80)
+condizione = 0
+
 # Giocatore
 player = pygame.Rect(40, 45, 30, 30)
 vel = 4
@@ -62,7 +65,7 @@ while run:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
-
+    keys = pygame.key.get_pressed()
     #movimento nemico
 
     #nemico 1
@@ -101,17 +104,16 @@ while run:
         nemico3.y = starty
         verso = 1
 
-
-    keys = pygame.key.get_pressed()
     if player.colliderect(nemico1):
-        print("Hai perso")
+        condizione = 1
         run = False
+        
     if player.colliderect(nemico2):
-        print("Hai perso")
+        condizione = 1
         run = False
  
     if player.colliderect(nemico3):
-        print("Hai perso")
+        condizione = 1
         run = False
  
     # Movimento orizzontale con collisione
@@ -140,7 +142,7 @@ while run:
  
     # Controllo vittoria
     if player.colliderect(goal):
-        print("Hai vinto!")
+        condizione = 2
         run = False  # termina il gioco
  
     # Disegna tutto
@@ -152,7 +154,10 @@ while run:
     pygame.draw.rect(win, RED, nemico3)
     for wall in walls:
         pygame.draw.rect(win, BLUE, wall)
- 
+    if condizione == 1:
+        win.blit(font.render("Hai perso", True, (255, 0, 0)), (430, 275))
+    elif condizione == 2:
+        win.blit(font.render("Hai vinto", True, (0, 255, 0)), (430, 275))
     pygame.display.update()
     clock.tick(60)
  
