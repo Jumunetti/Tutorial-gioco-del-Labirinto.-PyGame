@@ -12,4 +12,5 @@ In questa repository ti insegneremo a creare questo gioco da zero usando PyGame,
 - [Lesson 1: PyGame, la classe Rect. e le sue funzioni.](lesson1)
 - [Lesson 2: Il giocatore e il suo movimento, ostacoli e arrivo.](./lesson2)
 - [Lesson 3: Nemici ed il loro movimeto.](lesson3)
-- [Lesson 4: Prova finale comprensiva di tutto.](lesson4)
+- [Lesson 4: Come fare le schermate di vittoria e sconfitta.](lesson4)
+- [Lesson 5: Prova finale comprensiva di tutto.](lesson5)
