@@ -30,11 +30,9 @@ GREEN = (0, 255, 0)
 #TODO4: crea una lista walls con dentro tutti i muri che vuoi
  
 dt = clock.tick(60) / 1000.0
- 
-verso = 1
-distanza = 220
-startx = nemico1.x
-starty = nemico3.y
+
+# info nemici
+#TODO4: crea le variabili che servono ai nemici
 
 
 run = True
@@ -42,86 +40,33 @@ while run:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
+    keys = pygame.key.get_pressed()
+    #movimento nemici
 
-    #movimento nemico
-
+    #TODO5: scrivi il movimento dei tre nemici
     #nemico 1
-    nemico1.x += verso * velocita * dt
- 
-    if verso == 1 and nemico1.x >= startx + distanza:
-        nemico1.x = startx + distanza
-        verso = -1
- 
-    if verso == -1 and nemico1.x <= startx:
-        nemico1.x = startx
-        verso = 1
- 
- 
+    
+
     #nemico 2
  
-    nemico2.x += verso * velocita * dt
  
-    if verso == 1 and nemico2.x >= startx + distanza:
-        nemico2.x = startx + distanza
-        verso = -1
- 
-    if verso == -1 and nemico2.x <= startx:
-        nemico2.x = startx
-        verso = 1
-
     #nemico 3
-    nemico3.y += verso * velocita * dt
- 
-    if verso == 1 and nemico3.y >= starty + distanza:
-        nemico3.y = starty + distanza
-        verso = -1
- 
- 
-    if verso == -1 and nemico3.y <= starty:
-        nemico3.y = starty
-        verso = 1
 
 
-    keys = pygame.key.get_pressed()
-    if player.colliderect(nemico1):
-        print("Hai perso")
-        run = False
-    if player.colliderect(nemico2):
-        print("Hai perso")
-        run = False
+    #gestione dei collide
  
-    if player.colliderect(nemico3):
-        print("Hai perso")
-        run = False
- 
+    #TODO6: gestigli le collisioni con i nemici
+
+
+    #TODO8: movimento del personaggio e collisione con i muri
     # Movimento orizzontale con collisione
-    if keys[pygame.K_a]:
-        player.x -= vel
-        for wall in walls:
-            if player.colliderect(wall):
-                player.x += vel
-    if keys[pygame.K_d]:
-        player.x += vel
-        for wall in walls:
-            if player.colliderect(wall):
-                player.x -= vel
+    
  
     # Movimento verticale con collisione
-    if keys[pygame.K_w]:
-        player.y -= vel
-        for wall in walls:
-            if player.colliderect(wall):
-                player.y += vel
-    if keys[pygame.K_s]:
-        player.y += vel
-        for wall in walls:
-            if player.colliderect(wall):
-                player.y -= vel
+
  
     # Controllo vittoria
-    if player.colliderect(goal):
-        print("Hai vinto!")
-        run = False  # termina il gioco
+    # TODO9: gestisci la con il goal e la vittoria
  
     # Disegna tutto
     win.fill(BLACK)
