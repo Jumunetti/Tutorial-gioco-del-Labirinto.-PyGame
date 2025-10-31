@@ -1,4 +1,4 @@
-1. Creazione del Giocatore
+# 1. Creazione del Giocatore
 
 player = pygame.Rect(40, 45, 30, 30)
 vel = 4
@@ -19,9 +19,9 @@ Questo sarà il "corpo" del giocatore sullo schermo.
 vel = 4 
 Questa è la velocità del giocatore, cioè di quanti pixel si muove ogni volta che premi un tasto direzionale. Più il valore è alto, più il giocatore si sposta rapidamente.
 
-2. Creazione dei Muri
+# 2. Creazione dei Muri
 
-# TODO creazione Muri
+
 walls = [
     pygame.Rect(0, 0, 1200, 20), pygame.Rect(0, 0, 20, 600),
     pygame.Rect(0, 580, 1200, 20), pygame.Rect(1180, 0, 20, 600),
@@ -53,7 +53,7 @@ Le prime 4 righe infatti disegnano i bordi esterni del gioco:
 (1180, 0, 20, 600) → muro destro
 Le righe successive disegnano muri interni che formano un percorso.
 
-3. Controllo della Vittoria
+# 3. Controllo della Vittoria
 
 if player.colliderect(goal):
     condizione = 2
