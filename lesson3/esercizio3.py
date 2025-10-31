@@ -15,16 +15,17 @@ GREEN = (0, 255, 0)
 
 # Giocatore
 
-#TODO1: crea il player e una variabile velocità_player
+player = pygame.Rect(40, 45, 30, 30)
+vel = 4
  
 #nemici
 
-#TODO2: crea i 3 Rect nemici e crea una variabile velocita_nemico
+#TODO1: crea i 3 Rect nemici e crea una variabile velocita_nemico
  
 dt = clock.tick(60) / 1000.0
 
 # info nemici
-#TODO3: crea le variabili che servono ai nemici
+#TODO2: crea le variabili che servono ai nemici
 
 
 run = True
@@ -35,7 +36,7 @@ while run:
     keys = pygame.key.get_pressed()
     #movimento nemici
 
-    #TODO4: scrivi il movimento dei tre nemici
+    #TODO3: scrivi il movimento dei tre nemici
   
     #nemico 1
     
@@ -50,7 +51,9 @@ while run:
 
     #gestione dei collide
  
-    #TODO5: gestigli le collisioni con i nemici
+    #TODO4: gestigli le collisioni con i nemici
+
+    #Movimento orizzontale con collisione
  
     # Movimento verticale con collisione
 
