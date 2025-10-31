@@ -37,4 +37,46 @@ while running:
 
 
 
+
+#PUNTO 2 
+classe rect,cos'è e come funziona:
+
+In Pygame, la classe Rect (abbreviazione di rectangle) serve per rappresentare un rettangolo.
+È molto utile perché:indica dove si trova un oggetto sullo schermo,definisce la sua grandezza,
+e permette di gestire movimenti e collisioni in modo semplice.
+
+Come si crea un Rect:
+Puoi creare un rettangolo in vari modi, ma il più comune è questo:
+rect = pygame.Rect(x, y, larghezza, altezza)
+rect = pygame.Rect(50, 100, 60, 40)
+Cio è: un rettangolo che parte dal punto (50, 100) e ha una larghezza di 60 e un’altezza di 40 pixel.
+
+Come usarlo nel gioco:
+Spesso si usa Rect per rappresentare la posizione di un personaggio o di un oggetto, anche se poi lo disegni con un’immagine o una forma.
+
+Disegnare un Rect sullo schermo:
+pygame.draw.rect(screen, RED, player_rect)
+Questo disegna il rettangolo player_rect di colore rosso.
+
+
+
+
+
+#PUNTO 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 disegnare tutto sullo schermo.
