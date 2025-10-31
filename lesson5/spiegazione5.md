@@ -75,16 +75,20 @@ Ogni muro è un rettangolo `Rect`, e li mettiamo in una lista per disegnarli e c
 walls = [
     pygame.Rect(0, 0, 1200, 20), pygame.Rect(0, 0, 20, 600),
     pygame.Rect(0, 580, 1200, 20), pygame.Rect(1180, 0, 20, 600),
-    pygame.Rect(100, 0, 30, 350), pygame.Rect(100, 430, 30, 400),
-    pygame.Rect(200, 65, 30, 190), pygame.Rect(200, 340, 30, 190),
-    pygame.Rect(450, 65, 30, 190), pygame.Rect(450, 340, 30, 190),
-    pygame.Rect(200, 65, 250, 30), pygame.Rect(200, 340, 250, 30),
-    pygame.Rect(200, 225, 250, 30), pygame.Rect(200, 500, 250, 30),
-    pygame.Rect(600, 65, 30, 190), pygame.Rect(600, 340, 30, 190),
-    pygame.Rect(850, 65, 30, 190), pygame.Rect(850, 340, 30, 190),
-    pygame.Rect(600, 65, 250, 30), pygame.Rect(600, 340, 250, 30),
-    pygame.Rect(600, 225, 250, 30), pygame.Rect(600, 500, 250, 30),
-    pygame.Rect(1000, -200, 30, 350), pygame.Rect(1000, 220, 30, 400),
+    pygame.Rect(100,00,30,350), pygame.Rect(100,430,30,400),
+
+    pygame.Rect(200,65, 30,190),pygame.Rect(200,340, 30,190),
+    pygame.Rect(450,65, 30,190),pygame.Rect(450,340, 30,190),
+
+    pygame.Rect(200,65, 250,30),pygame.Rect(200,340, 250,30),
+    pygame.Rect(200,225, 250,30),pygame.Rect(200,500, 250,30),
+
+    pygame.Rect(600,65, 30,190),pygame.Rect(600,340, 30,190),
+    pygame.Rect(850,65, 30,190),pygame.Rect(850,340, 30,190),
+
+    pygame.Rect(600,65, 250,30),pygame.Rect(600,340, 250,30),
+    pygame.Rect(600,225, 250,30),pygame.Rect(600,500, 250,30),
+    pygame.Rect(1000,-200,30,350), pygame.Rect(1000,220,30,400),
 ]
 ```
 
