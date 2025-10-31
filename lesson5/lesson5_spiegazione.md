@@ -1,4 +1,4 @@
-# 🧠 Lezione 5 – Soluzione e spiegazione dei TODO
+# Lezione 5 – Soluzione e spiegazione dei TODO
 
 In questa lezione andremo a completare tutti i `# TODO` presenti nel file `lesson5.py`, costruendo il gioco completo del labirinto in Pygame.  
 Seguendo le spiegazioni, otterrai un gioco funzionante con:
@@ -9,7 +9,7 @@ Seguendo le spiegazioni, otterrai un gioco funzionante con:
 
 ---
 
-## ✅ TODO1 – Informazioni per la schermata
+## TODO1 – Informazioni per la schermata
 
 Serve per gestire le **schermate di vittoria o sconfitta**.
 
@@ -26,7 +26,7 @@ condizione = 0
 
 ---
 
-## ✅ TODO2 – Crea il player e una variabile velocità_player
+## TODO2 – Crea il player e una variabile velocità_player
 
 Creiamo il rettangolo del giocatore e la sua velocità.
 
@@ -40,7 +40,7 @@ vel = 4
 
 ---
 
-## ✅ TODO3 – Crea il Rect goal
+## TODO3 – Crea il Rect goal
 
 Aggiungiamo il **rettangolo verde** che rappresenta l’obiettivo finale.
 
@@ -52,7 +52,7 @@ Quando il giocatore collide con questo rettangolo, il gioco sarà vinto.
 
 ---
 
-## ✅ TODO4 – Crea i 3 Rect nemici e la velocità
+## TODO4 – Crea i 3 Rect nemici e la velocità
 
 Definiamo i tre nemici e la velocità con cui si muoveranno.
 
@@ -66,7 +66,7 @@ velocita = 50
 
 ---
 
-## ✅ TODO5 – Crea la lista `walls`
+## TODO5 – Crea la lista `walls`
 
 Serve a disegnare e gestire i muri del labirinto.  
 Ogni muro è un rettangolo `Rect`, e li mettiamo in una lista per disegnarli e controllare le collisioni.
@@ -90,7 +90,7 @@ walls = [
 
 ---
 
-## ✅ TODO6 – Crea le variabili che servono ai nemici
+## TODO6 – Crea le variabili che servono ai nemici
 
 Servono per gestire il **verso e la distanza del movimento** dei nemici.
 
@@ -107,7 +107,7 @@ starty = nemico3.y
 
 ---
 
-## ✅ TODO7 – Movimento dei tre nemici
+## TODO7 – Movimento dei tre nemici
 
 I nemici si muovono avanti e indietro finché raggiungono un limite, poi cambiano direzione.
 
@@ -142,7 +142,7 @@ if verso == -1 and nemico3.y <= starty:
 
 ---
 
-## ✅ TODO8 – Gestisci le collisioni con i nemici
+## TODO8 – Gestisci le collisioni con i nemici
 
 Se il giocatore tocca un nemico, la partita è persa.
 
@@ -162,7 +162,7 @@ if player.colliderect(nemico3):
 
 ---
 
-## ✅ TODO9 – Movimento del personaggio e collisione con i muri
+## TODO9 – Movimento del personaggio e collisione con i muri
 
 Controlliamo il movimento del giocatore e impediamo di attraversare i muri.
 
@@ -194,7 +194,7 @@ if keys[pygame.K_s]:
 
 ---
 
-## ✅ TODO10 – Controllo vittoria
+## TODO10 – Controllo vittoria
 
 Se il giocatore tocca il rettangolo verde (`goal`), la partita è vinta.
 
@@ -206,7 +206,7 @@ if player.colliderect(goal):
 
 ---
 
-## ✅ TODO11 – Schermate di vittoria e sconfitta
+## TODO11 – Schermate di vittoria e sconfitta
 
 Dopo che `run` diventa `False`, mostriamo un messaggio in base alla condizione.
 
@@ -217,14 +217,3 @@ elif condizione == 2:
     win.blit(font.render("Hai vinto", True, (0, 255, 0)), (430, 275))
 ```
 
----
-
-## 🎯 Risultato finale
-
-Una volta completati tutti i `TODO`, avrai un **gioco del labirinto funzionante**, con:
-- movimento fluido;
-- nemici dinamici;
-- collisioni realistiche;
-- schermate di vittoria e sconfitta.
-
-Provalo, modifica la velocità, o aggiungi nuovi muri e nemici per creare il tuo labirinto personalizzato! 🕹️
