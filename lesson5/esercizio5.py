@@ -67,6 +67,7 @@ while run:
  
     # Movimento verticale con collisione
 
+    # Movimento orizzontale con collisione
  
     # Controllo vittoria
     # TODO10: gestisci la con il goal e la vittoria
