@@ -63,19 +63,39 @@ Questo disegna il rettangolo player_rect di colore rosso.
 
 
 #PUNTO 3
+collisioni,cosa sono e come funzionano:
 
+Una collisione avviene quando due oggetti si toccano (cioè quando le loro aree si sovrappongono sullo schermo).
+In Pygame, le collisioni si controllano quasi sempre usando la classe Rect.
+ Se ogni oggetto del gioco ha un rettangolo (Rect) che lo rappresenta, puoi facilmente capire se due oggetti si stanno toccando.
+Pygame semplifica i calcoli delle collisioni usando rettangoli (Rect), perché sono facili da gestire con la matematica.
+Un rettangolo può essere definito da:la posizione del suo angolo in alto a sinistra (x, y),la larghezza (width) e l’altezza (height).
 
+Due rettangoli si sovrappongono se e solo se:
+rect1.x < rect2.x + rect2.width
+rect1.x + rect1.width > rect2.x
+rect1.y < rect2.y + rect2.height
+rect1.y + rect1.height > rect2.y
+Se tutte e quattro queste condizioni sono vere, significa che c’è una parte in comune → collisione!
+Questo controllo è quello che Pygame fa automaticamente quando chiami colliderect().
 
+Ogni oggetto in Pygame può essere associato a un rettangolo di collisione, detto anche hitbox.
+Il rettangolo può coincidere con l’immagine dell’oggetto,
+Oppure può essere un po’ più piccolo o più grande (per rendere la collisione più realistica o più permissiva).
+Pygame non gestisce automaticamente le conseguenze della collisione:
+ti dice solo se due oggetti si toccano.
+Sta poi al programmatore decidere cosa deve succedere (fermare un movimento, togliere punti vita, cambiare direzione, ecc.).
 
+Durante il game loop, le collisioni si controllano continuamente.
+Il ciclo tipico è:
+L’oggetto si muove → cambia il suo Rect (es. rect.x += 5)
+Si controlla la collisione con gli altri oggetti (colliderect)
+Se c’è collisione → si decide cosa fare (fermare, respingere, ecc.)
 
-
-
-
-
-
-
-
-
+player.x += vel
+if player.colliderect(wall):
+    # Reagisci alla collisione
+    player.x -= vel  # torna indietro
 
 
 
