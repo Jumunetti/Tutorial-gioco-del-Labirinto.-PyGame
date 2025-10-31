@@ -32,3 +32,5 @@ In questo modo potrai:
 - imparare i concetti passo dopo passo,
 - mettere subito in pratica ciò che studi,
 - arrivare alla fine con un **vero gioco completo funzionante**.
+
+Nella repository potrai anche trovare il file con il gioco completo.
