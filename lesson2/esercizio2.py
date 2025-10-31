@@ -1,36 +1,56 @@
-# TODO creazione Giocatore
-player = pygame.Rect(40, 45, 30, 30)
-vel = 4
+import pygame
  
+pygame.init()
+ 
+# Finestra e clock
+win = pygame.display.set_mode((1200, 600))
+clock = pygame.time.Clock()
+ 
+# Colori
+BLACK = (0, 0, 0)
+BLUE = (0, 0, 255)
+YELLOW = (255, 255, 0)
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
 
-# TODO creazione Muri
-walls = [
-    pygame.Rect(0, 0, 1200, 20), pygame.Rect(0, 0, 20, 600),
-    pygame.Rect(0, 580, 1200, 20), pygame.Rect(1180, 0, 20, 600),
-    pygame.Rect(100,00,30,350), pygame.Rect(100,430,30,400),
-    #primi 2 
-    pygame.Rect(200,65, 30,190),pygame.Rect(200,340, 30,190),
-    pygame.Rect(450,65, 30,190),pygame.Rect(450,340, 30,190),
+# Giocatore
 
-    pygame.Rect(200,65, 250,30),pygame.Rect(200,340, 250,30),
-    pygame.Rect(200,225, 250,30),pygame.Rect(200,500, 250,30),
-    #secondi 2
-    pygame.Rect(600,65, 30,190),pygame.Rect(600,340, 30,190),
-    pygame.Rect(850,65, 30,190),pygame.Rect(850,340, 30,190),
+#TODO1: crea il player e una variabile velocità_player
+ 
+# Obiettivo
 
-    pygame.Rect(600,65, 250,30),pygame.Rect(600,340, 250,30),
-    pygame.Rect(600,225, 250,30),pygame.Rect(600,500, 250,30),
-    pygame.Rect(1000,-200,30,350), pygame.Rect(1000,220,30,400),
+#TODO2: crea il Rect goal 
+ 
+# Muri
+#TODO3: crea una lista walls con dentro tutti i muri che vuoi
+ 
+dt = clock.tick(60) / 1000.0
+
+run = True
+while run:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            run = False
+    keys = pygame.key.get_pressed()
+
+    #gestione dei collide
+
+    #TODO4: movimento del personaggio e collisione con i muri
+    # Movimento orizzontale con collisione
+    
+ 
+    # Movimento verticale con collisione
 
  
-]
+    # Controllo vittoria
+    # TODO5: gestisci la con il goal e la vittoria
  
-
+    # Disegna tutto
+    win.fill(BLACK)
  
-    # TODO Controllo vittoria
-    if player.colliderect(goal):
-        condizione = 2
-        run = False  # termina il gioco
+    #TODO6: scrivi la partee necessaria per disegnare a schermo i nemici
  
-
-
+    pygame.display.update()
+    clock.tick(60)
+ 
+pygame.quit()
