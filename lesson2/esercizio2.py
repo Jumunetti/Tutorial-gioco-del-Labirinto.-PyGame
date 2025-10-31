@@ -38,6 +38,7 @@ while run:
     #TODO4: movimento del personaggio e collisione con i muri
     # Movimento orizzontale con collisione
     
+    # Movimento orizzontale con collisione
  
     # Movimento verticale con collisione
 
