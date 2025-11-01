@@ -1,4 +1,4 @@
-PUNTO 1
+# PUNTO 1
 Cos’è Pygame e come funziona:
 
 Pygame è una libreria di Python pensata per creare giochi 2D.È costruita sopra un’altra libreria chiamata SDL (Simple DirectMedia Layer), che gestisce le immagini, i suoni, la tastiera e il mouse.
@@ -38,7 +38,7 @@ while running:
 
 
 
-#PUNTO 2 
+# PUNTO 2 
 classe rect,cos'è e come funziona:
 
 In Pygame, la classe Rect (abbreviazione di rectangle) serve per rappresentare un rettangolo.
@@ -62,7 +62,7 @@ Questo disegna il rettangolo player_rect di colore rosso.
 
 
 
-#PUNTO 3
+# PUNTO 3
 collisioni,cosa sono e come funzionano:
 
 Una collisione avviene quando due oggetti si toccano (cioè quando le loro aree si sovrappongono sullo schermo).
