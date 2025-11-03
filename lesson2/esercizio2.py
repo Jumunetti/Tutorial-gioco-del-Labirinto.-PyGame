@@ -49,7 +49,7 @@ while run:
     # Disegna tutto
     win.fill(BLACK)
  
-    #TODO6: scrivi la partee necessaria per disegnare a schermo i nemici
+    #TODO6: scrivi la partee necessaria per disegnare a schermo tutto
  
     pygame.display.update()
     clock.tick(60)
