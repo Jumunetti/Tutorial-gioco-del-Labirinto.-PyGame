@@ -1,5 +1,5 @@
 
-TODO1: crea il player e una variabile velocità_player
+# TODO1: crea il player e una variabile velocità_player
 Cosa fare:
 Si deve creare un rettangolo che rappresenti il giocatore e una variabile per la velocità di movimento.
 Esempio:
@@ -9,7 +9,7 @@ velocita_player = 4  # velocità di movimento
 
 
 
-TODO3: crea una lista walls con dentro tutti i muri che vuoi
+# TODO3: crea una lista walls con dentro tutti i muri che vuoi
 si deve creare una lista di pygame.Rect che rappresentano i muri del livello. Servono per limitare i movimenti del giocatore e creare un labirinto.
 Esempio:
 
@@ -22,7 +22,7 @@ walls = [
     pygame.Rect(600, 400, 150, 30)
 ]
 
-TODO5: gestisci la con il goal e la vittoria
+# TODO5: gestisci la con il goal e la vittoria
 Verifica se il giocatore ha raggiunto l’obiettivo (goal). Se sì, puoi stampare un messaggio o terminare il gioco.
 Esempio:
 
