@@ -1,12 +1,5 @@
 
-# Guida ai TODO del codice Pygame – Gestione dei nemici in movimento
-
-Questo documento spiega come completare i punti contrassegnati come **TODO** nel codice base di Pygame.  
-L’obiettivo è creare tre nemici che si muovono e che fanno perdere la partita se entrano in contatto con il giocatore.
-
----
-
-## 🟥 TODO1: crea i 3 Rect nemici e crea una variabile velocita_nemico
+## TODO1: crea i 3 Rect nemici e crea una variabile velocita_nemico
 
 Crea tre rettangoli che rappresentano i nemici e una variabile per la loro velocità.  
 Ogni nemico avrà posizione e dimensione proprie.
@@ -25,7 +18,7 @@ velocita_nemico = 50  # pixel per secondo
 
 ---
 
-## 🟦 TODO2: crea le variabili che servono ai nemici
+## TODO2: crea le variabili che servono ai nemici
 
 I nemici devono muoversi avanti e indietro, quindi serve sapere:
 - Il **verso** del movimento (`1` o `-1`).
@@ -46,7 +39,7 @@ starty = nemico3.y
 
 ---
 
-## 🟨 TODO3: scrivi il movimento dei tre nemici
+## TODO3: scrivi il movimento dei tre nemici
 
 Ogni nemico si muove lungo un asse:
 - **Nemico 1 e 2** si muovono orizzontalmente.
@@ -84,7 +77,7 @@ if verso == -1 and nemico3.y <= starty:
 
 ---
 
-## 🟥 TODO4: gestisci le collisioni con i nemici
+## TODO4: gestisci le collisioni con i nemici
 
 Controlla se il giocatore tocca uno dei nemici.  
 Se sì, puoi far terminare il gioco o mostrare un messaggio di sconfitta.
@@ -104,9 +97,3 @@ win.blit(font.render("Hai perso!", True, (255, 0, 0)), (430, 275))
 
 ---
 
-## 🏁 Risultato finale
-
-Completando tutti i TODO:
-- Tre rettangoli rossi (nemici) si muovono nello schermo.
-- Il giocatore (giallo) può spostarsi liberamente.
-- Se tocca un nemico, la partita termina con un messaggio di sconfitta.
