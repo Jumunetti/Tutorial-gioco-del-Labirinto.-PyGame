@@ -1,12 +1,5 @@
 
-# Guida ai TODO del codice Pygame
-
-Questo documento spiega come completare i punti contrassegnati come **TODO** nel codice base di Pygame.  
-Il riferimento è il gioco completo in cui un giocatore si muove in un labirinto evitando muri e cercando di raggiungere un obiettivo.
-
----
-
-## 🟨 TODO1: crea il player e una variabile velocità_player
+## TODO1: crea il player e una variabile velocità_player
 
 Crea un rettangolo che rappresenta il giocatore (il personaggio controllato dall’utente) e una variabile che indica la sua velocità di movimento.
 
@@ -21,7 +14,7 @@ velocità_player = 4  # pixel di movimento per frame
 
 ---
 
-## 🟩 TODO2: crea il Rect goal
+## TODO2: crea il Rect goal
 
 Crea un rettangolo che rappresenta il traguardo da raggiungere (in genere di colore verde).
 
@@ -35,7 +28,7 @@ goal = pygame.Rect(1100, 500, 50, 50)
 
 ---
 
-## 🟦 TODO3: crea una lista walls con dentro tutti i muri che vuoi
+## TODO3: crea una lista walls con dentro tutti i muri che vuoi
 
 I muri servono per creare il labirinto o gli ostacoli.  
 Vanno inseriti in una lista di `pygame.Rect`.
@@ -58,7 +51,7 @@ walls = [
 
 ---
 
-## 🟥 TODO4: movimento del personaggio e collisione con i muri
+## TODO4: movimento del personaggio e collisione con i muri
 
 Gestisci il movimento con i tasti `W`, `A`, `S`, `D` e impedisci che il giocatore attraversi i muri.
 
@@ -96,7 +89,7 @@ if keys[pygame.K_s]:
 
 ---
 
-## 🟩 TODO5: gestisci la collisione con il goal e la vittoria
+## TODO5: gestisci la collisione con il goal e la vittoria
 
 Controlla se il giocatore tocca il rettangolo del traguardo e mostra un messaggio di vittoria.
 
@@ -115,7 +108,7 @@ win.blit(font.render("Hai vinto!", True, (0, 255, 0)), (430, 275))
 
 ---
 
-## 🟦 TODO6: disegna tutto
+## TODO6: disegna tutto
 
 Disegna tutti gli elementi sulla finestra: sfondo, giocatore, obiettivo e muri.
 
@@ -128,17 +121,3 @@ for wall in walls:
     pygame.draw.rect(win, BLUE, wall)  # muri
 ```
 
-Dopo aver disegnato tutto, aggiorna la finestra con:
-```python
-pygame.display.update()
-```
-
----
-
-## 🏁 Risultato finale
-
-Completando tutti i TODO, otterrai un piccolo gioco dove:
-- Un quadrato giallo (giocatore) si muove con i tasti `WASD`.
-- I muri blu bloccano il movimento.
-- Un quadrato verde rappresenta il traguardo.
-- Quando il giocatore lo raggiunge, la partita termina con un messaggio di vittoria.
