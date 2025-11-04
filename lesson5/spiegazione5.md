@@ -1,12 +1,5 @@
 # Lezione 5 – Soluzione e spiegazione dei TODO
 
-In questa lezione andremo a completare tutti i `# TODO` presenti nel file `lesson5.py`, costruendo il gioco completo del labirinto in Pygame.  
-Seguendo le spiegazioni, otterrai un gioco funzionante con:
-- un giocatore controllabile;
-- tre nemici in movimento;
-- muri con cui non puoi passare;
-- una condizione di vittoria e di sconfitta.
-
 ---
 
 ## TODO1 – Informazioni per la schermata
