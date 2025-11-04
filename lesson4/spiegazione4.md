@@ -90,12 +90,3 @@ elif condizione == 2:
 - `win.blit(...)` lo **disegna sullo schermo** alle coordinate indicate (in questo caso al centro).
 - Il secondo `elif` fa la stessa cosa per il messaggio di vittoria.
 
----
-
-## Risultato finale
-
-Dopo aver completato i tre TODO, il tuo gioco:
-1. mostrerà un messaggio di **vittoria** o **sconfitta** al termine della partita;
-2. userà la variabile `condizione` per gestire lo stato di gioco;
-3. sarà pronto per essere esteso con altri nemici o livelli!
-
