@@ -97,4 +97,4 @@ win.blit(font.render("Hai perso!", True, (255, 0, 0)), (430, 275))
 
 ---
 
-![Testo alternativo](..Immagini/Screenshot labirintonuovo.png)
+![Testo alternativo](..Immagini/Screenshot_labirintonuovo.png)
