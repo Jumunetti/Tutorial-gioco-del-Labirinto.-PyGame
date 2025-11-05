@@ -100,12 +100,6 @@ if player.colliderect(goal):
     run = False  # termina il gioco
 ```
 
-Puoi anche mostrare un messaggio sulla finestra usando un font:
-```python
-font = pygame.font.SysFont(None, 80)
-win.blit(font.render("Hai vinto!", True, (0, 255, 0)), (430, 275))
-```
-
 ---
 
 ## TODO6: disegna tutto
