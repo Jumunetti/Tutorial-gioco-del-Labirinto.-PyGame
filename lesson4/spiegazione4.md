@@ -84,6 +84,10 @@ if condizione == 1:
 elif condizione == 2:
     win.blit(font.render("Hai vinto", True, (0, 255, 0)), (430, 275))
 ```
+![boh](../Immagini/Screenshot_sconfitta.png)
+
+![boh](../Immagini/Screenshot_labirintonuovo.png)
+
 
 ### Spiegazione
 - `font.render("Hai perso", True, (255, 0, 0))` crea un testo rosso (“Hai perso”) come superficie.  
