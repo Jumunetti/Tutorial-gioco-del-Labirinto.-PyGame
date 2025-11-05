@@ -34,7 +34,7 @@ else:
 
 - `colliderect()` restituisce **True** se i due rettangoli si intersecano o si toccano.
 
-![Screenshot](Immagini/Screenshot.png)
+![Screenshot](Immagini/Screenshot_staccato.png)
 
 - `colliderect()` restituisce **False** se i due rettangoli non si intersecano o non si toccano.
 
