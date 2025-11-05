@@ -216,4 +216,4 @@ elif condizione == 2:
 
 # Cosi alla fine avrai il gioco completo
 
-![Screenshot](Immagini/Screenshot_labirinto.png)
+![Screenshot](../Immagini/Screenshot_labirinto.png)
