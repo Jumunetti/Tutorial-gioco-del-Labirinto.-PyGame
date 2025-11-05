@@ -38,7 +38,7 @@ else:
 
 - `colliderect()` restituisce **False** se i due rettangoli non si intersecano o non si toccano.
 
-![staccato](Immagini/Screenshot_labirinto.png)
+![staccato](../Immagini/Screenshot_staccato.png)
 
 - Puoi anche usare questa condizione per mostrare un messaggio a schermo.
 
