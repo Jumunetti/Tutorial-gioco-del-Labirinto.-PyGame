@@ -214,3 +214,6 @@ elif condizione == 2:
     win.blit(font.render("Hai vinto", True, (0, 255, 0)), (430, 275))
 ```
 
+# Cosi alla fine avrai il gioco completo
+
+![Screenshot](Immagini/Screenshot_labirinto.png)
