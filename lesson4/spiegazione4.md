@@ -84,9 +84,9 @@ if condizione == 1:
 elif condizione == 2:
     win.blit(font.render("Hai vinto", True, (0, 255, 0)), (430, 275))
 ```
-![boh](../Immagini/Screenshot_sconfitta.png)
+![boh](../Immagini/Screenshot_perdita.png)
 
-![boh](../Immagini/Screenshot_labirintonuovo.png)
+![boh](../Immagini/Screenshot_vinttoria.png)
 
 
 ### Spiegazione
