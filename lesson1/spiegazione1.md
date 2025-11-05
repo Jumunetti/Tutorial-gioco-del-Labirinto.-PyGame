@@ -33,7 +33,7 @@ else:
 ```
 
 - `colliderect()` restituisce **True** se i due rettangoli si intersecano o si toccano.
-- Puoi anche usare questa condizione per cambiare colore o mostrare un messaggio a schermo.
+- Puoi anche usare questa condizione per mostrare un messaggio a schermo.
 
 ---
 
