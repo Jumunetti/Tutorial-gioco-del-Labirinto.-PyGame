@@ -121,3 +121,4 @@ for wall in walls:
     pygame.draw.rect(win, BLUE, wall)  # muri
 ```
 
+![Testo alternativo](images/nome_immagine.png)
