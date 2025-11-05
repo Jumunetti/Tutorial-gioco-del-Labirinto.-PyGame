@@ -34,11 +34,11 @@ else:
 
 - `colliderect()` restituisce **True** se i due rettangoli si intersecano o si toccano.
 
-![Screenshot](Immagini/Screenshot_attaccato.png)
+![attaccato](Immagini/Screenshot_attaccato.png)
 
 - `colliderect()` restituisce **False** se i due rettangoli non si intersecano o non si toccano.
 
-![Screenshot](Immagini/Screenshot_labirinto.png)
+![staccato](Immagini/Screenshot_labirinto.png)
 
 - Puoi anche usare questa condizione per mostrare un messaggio a schermo.
 
