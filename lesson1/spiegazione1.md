@@ -1,3 +1,7 @@
+# pyGame
+
+Pygame è una libreria di Python che serve per creare videogiochi 2D (cioè in due dimensioni).È costruita sopra un’altra libreria chiamata SDL (Simple DirectMedia Layer), che gestisce le immagini, i suoni, la tastiera e il mouse.
+
 
 ## TODO1: crea 2 Rect che si toccano oppure no
 
