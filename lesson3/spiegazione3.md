@@ -88,13 +88,6 @@ if player.colliderect(nemico1) or player.colliderect(nemico2) or player.collider
     print("Hai perso!")
     run = False
 ```
-
-Puoi anche aggiungere un messaggio a schermo:
-```python
-font = pygame.font.SysFont(None, 80)
-win.blit(font.render("Hai perso!", True, (255, 0, 0)), (430, 275))
-```
-
 ---
 
 ![boh](../Immagini/Screenshot_labirintonuovo.png)
