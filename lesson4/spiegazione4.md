@@ -4,16 +4,7 @@ In questa lezione aggiungeremo due elementi fondamentali al nostro gioco:
 - le **variabili di stato** (`font` e `condizione`);
 - e le **schermate di fine gioco** che mostrano se il giocatore ha vinto o perso.
 
-Alla fine del lavoro, il tuo gioco mostrerà a schermo il messaggio **"Hai vinto"** o **"Hai perso"** quando il giocatore raggiunge il traguardo o viene colpito da un nemico.
-
----
-
-## Obiettivi della lezione
-
-1. Creare una variabile `font` per scrivere testi sullo schermo.  
-2. Creare la variabile `condizione` per gestire se il giocatore ha vinto o perso.  
-3. Mostrare il messaggio corrispondente alla fine del gioco (vittoria o sconfitta).
-
+Alla fine del lavoro, il tuo gioco mostrerà a schermo il messaggio **"Hai vinto"** o **"Hai perso"** quando il giocatore raggiunge il traguardo o viene colpito da un 
 ---
 
 ## TODO1 – Variabili `font` e `condizione`
