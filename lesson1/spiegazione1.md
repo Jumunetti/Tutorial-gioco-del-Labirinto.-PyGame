@@ -60,14 +60,5 @@ pygame.draw.rect(win, BLUE, rect1)   # primo rettangolo blu
 pygame.draw.rect(win, GREEN, rect2)  # secondo rettangolo verde
 ```
 
-Puoi anche cambiare colore se si toccano:
-```python
-if rect1.colliderect(rect2):
-    pygame.draw.rect(win, RED, rect1)
-    pygame.draw.rect(win, RED, rect2)
-else:
-    pygame.draw.rect(win, BLUE, rect1)
-    pygame.draw.rect(win, GREEN, rect2)
-```
 
 
