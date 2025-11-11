@@ -14,11 +14,11 @@ In questo gioco controllerai un quadrato giallo che deve attraversare un labirin
 In questa repository imparerai a creare il gioco **da zero**, passo dopo passo.  
 Ogni lezione contiene codice e spiegazioni dettagliate:
 
-- [**Lesson 1:** Pygame, la classe `Rect` e le sue funzioni.](lesson1)
-- [**Lesson 2:** Il giocatore, il suo movimento, gli ostacoli e l’arrivo.](lesson2)
-- [**Lesson 3:** I nemici e il loro movimento.](lesson3)
-- [**Lesson 4:** Creare le schermate di vittoria e sconfitta.](lesson4)
-- [**Lesson 5:** Prova finale con tutti gli elementi insieme.](lesson5)
+- [**Lesson 1:** Pygame, la classe `Rect` e le sue funzioni (Lucia Romani).](lesson1)
+- [**Lesson 2:** Il giocatore, il suo movimento, gli ostacoli e l’arrivo (Caterina Gnoni).](lesson2)
+- [**Lesson 3:** I nemici e il loro movimento (Matilde Pucci).](lesson3)
+- [**Lesson 4:** Creare le schermate di vittoria e sconfitta (Leonardo Giombetti).](lesson4)
+- [**Lesson 5:** Prova finale con tutti gli elementi insieme (Leonardo Giombetti).](lesson5)
 
 ---
 
