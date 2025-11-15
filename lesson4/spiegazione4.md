@@ -70,9 +70,9 @@ Scrivi:
 
 ```python
 if condizione == 1:
-    win.blit(font.render("Hai perso", True, (255, 0, 0)), (430, 275))
+    win.blit(font.render("Hai perso", True, RED), (430, 275))
 elif condizione == 2:
-    win.blit(font.render("Hai vinto", True, (0, 255, 0)), (430, 275))
+    win.blit(font.render("Hai vinto", True, GREEN), (430, 275))
 ```
 ![boh](../Immagini/Screenshot_perdita.png)
 
