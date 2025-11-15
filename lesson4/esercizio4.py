@@ -76,11 +76,11 @@ while run:
  
     # Controllo vittoria e sconfitta
     if player.colliderect(goal):
-        condizione = 2
+        
         run = False  
 
     if player.colliderect(nemico):
-        condizione = 1
+        
         run = False
  
     # Disegna tutto
