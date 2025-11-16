@@ -23,13 +23,13 @@ while run:
         if event.type == pygame.QUIT:
             run = False
 
-    # Collisione
+    # TO DO 2 collisioni
     if rect1.colliderect(rect2):
         print("I rettangoli si toccano!")
     else:
         print("I rettangoli NON si toccano.")
 
-    # Disegno
+    # TO DO 3 disegna i rettangoli
     win.fill(BLACK)
     pygame.draw.rect(win, RED, rect1)
     pygame.draw.rect(win, BLUE, rect2)
